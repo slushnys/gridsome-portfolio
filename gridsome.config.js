@@ -5,6 +5,11 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
+  chainWebpack: config => {
+    const svgRule = config.module.rule("svg");
+    svgRule.uses.clear();
+    svgRule.use("vue-svg-loader").loader("vue-svg-loader");
+  },
   icon: "./static/favicon.png",
   siteName: "slusnys.com - freelance web developer",
   siteDescription:
@@ -12,7 +17,10 @@ module.exports = {
   siteUrl: "slusnys.com",
   plugins: [
     {
-      use: "gridsome-plugin-tailwindcss"
+      use: "gridsome-plugin-tailwindcss",
+      options: {
+        shouldPurge: false
+      }
     },
     {
       use: `gridsome-plugin-netlify-cms`
