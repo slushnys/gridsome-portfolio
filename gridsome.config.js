@@ -25,6 +25,8 @@ module.exports = {
     {
       use: `gridsome-plugin-netlify-cms`
     }
+    // TODO: implement filesystem for project posts
+    // TODO: implement filesystem for blog posts
     // {
     //   use: "@gridsome/source-filesystem",
     //   options: {
