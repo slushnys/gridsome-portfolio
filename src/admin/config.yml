@@ -6,6 +6,23 @@ media_folder: static/img
 public_folder: /public
 
 collections:
+  - name: "projects"
+    label: "Projects"
+    folder: "content/projects"
+    slug: "{{slug}}"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Tags", name: "tags", widget: "string" }
+      - { label: "Featured Image", name: "featuredImage", widget: "image" }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "list",
+          allow_add: true,
+        }
+      - { label: "Body", name: "body", widget: "markdown" }
+
   - name: "blogs"
     label: "Blogs"
     folder: "content/blog"

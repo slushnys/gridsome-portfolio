@@ -10,7 +10,7 @@ module.exports = {
     svgRule.uses.clear();
     svgRule.use("vue-svg-loader").loader("vue-svg-loader");
   },
-  icon: "./static/favicon.png",
+  icon: "./static/favic on.png",
   siteName: "slusnys.com - freelance web developer",
   siteDescription:
     "Experienced web developer focused on building business applications using vue.js and python.",
@@ -24,6 +24,14 @@ module.exports = {
     },
     {
       use: `gridsome-plugin-netlify-cms`
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "content/projects/**/*.md",
+        route: "/projects/:title",
+        typeName: "Project"
+      }
     }
     // TODO: implement filesystem for project posts
     // TODO: implement filesystem for blog posts
@@ -35,5 +43,11 @@ module.exports = {
     //     typeName: "Post"
     //   }
     // }
-  ]
+  ],
+  transformers: {
+    remark: {
+      externalLinksTarget: "_blank",
+      externalLinksRel: ["nofollow", "noopener", "noreferrer"]
+    }
+  }
 };
