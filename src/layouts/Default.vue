@@ -18,9 +18,9 @@
         </main>
       </transition>
     </div>
-    <footer class="flex mt-6">
+    <!-- <footer class="flex mt-6">
       <div class=" items-center mx-auto">slusnys.com</div>
-    </footer>
+    </footer> -->
   </div>
 </template>
 
