@@ -1,6 +1,6 @@
 <template>
   <div class="mt-2 md:flex pt-5 component">
-          <div class="max-w-sm w-full lg:max-w-full lg:flex">
+          <div class="max-w w-full lg:max-w-full lg:flex">
             <div
               class="h-48 lg:h-auto lg:w-48 flex-none bg-cover rounded-t lg:rounded-t-none lg:rounded-l text-center overflow-hidden border-t lg:border-b-none border-l border-r lg:border-l lg:border-b lg:border-t lg:border-gray-400 lg:rounded-r-none lg:border-r-0" 
               :style="backgroundImage"

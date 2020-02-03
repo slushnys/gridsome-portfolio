@@ -37,9 +37,7 @@
           Introduction
         </div> -->
         <p class="mt-2 text-xl text-gray-600">
-          Looking for someone who would have a history of developmening complex
-          application for businesses within banking, logistics and supply chain
-          or computer vision industries?
+          I'm a software developer with a a history of developing complex applications for businesses within banking, logistics and supply chain and computer vision industries.
         </p>
         <div class="text-center m-6 p-6">
           <a
