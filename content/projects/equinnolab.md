@@ -20,6 +20,6 @@ tags:
   ]
 ---
 
-## A kickstart into the tech career
+## Technology stack
 
-Why is the header
+Before I came to the company I was told that some engineers have already had started and implemented a u
