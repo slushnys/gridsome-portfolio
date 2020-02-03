@@ -33,10 +33,10 @@
     </div>
     <div class="md:flex">
       <div class="mb-4 mt-5">
-        <div class="uppercase tracking-wide text-lg text-indigo-600 font-bold">
+        <!-- <div class="uppercase tracking-wide text-lg text-indigo-600 font-bold">
           Introduction
-        </div>
-        <p class="mt-2 text-lg text-gray-600">
+        </div> -->
+        <p class="mt-2 text-xl text-gray-600">
           Looking for someone who would have a history of developmening complex
           application for businesses within banking, logistics and supply chain
           or computer vision industries?
@@ -45,7 +45,7 @@
           <a
             href="mailto:zigmas@slusnys.com"
             target="_top"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded"
+            class="secondary-color text-white font-bold py-3 px-4 rounded"
           >
             Contact me
           </a>
@@ -55,9 +55,9 @@
     <div class="md:flex">
       <div class="mb-4 mt-5">
         <div
-          class="uppercase h2 tracking-wide text-lg text-indigo-600 font-bold"
+          class="uppercase h2 tracking-wide text-xl font-bold"
         >
-          What have I been working on
+          Projects I've been working on
         </div>
         <div class="flex-wrap">
         <template v-for="project in $page.projects.edges">
@@ -151,13 +151,22 @@ h1 {
   @apply text-3xl;
 }
 .uppercase {
-  color: #acb7bc;
+  /* color: #acb7bc; */
 }
 h2 {
+  margin-top: 2rem;
   @apply text-3xl;
+}
+h3 {
+  margin-top: 1rem;
+  @apply text-2xl;
 }
 .home-links a {
   margin-right: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
 }
 
 .social-icon:hover {

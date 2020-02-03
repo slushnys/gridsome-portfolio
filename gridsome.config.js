@@ -11,9 +11,9 @@ module.exports = {
     svgRule.use("vue-svg-loader").loader("vue-svg-loader");
   },
   icon: "./static/favic on.png",
-  siteName: "slusnys.com - freelance web developer",
+  siteName: "slusnys.com - freelance software developer",
   siteDescription:
-    "Experienced web developer focused on building business applications using vue.js and python.",
+    "Experienced web developer focused on building business applications using vue.js, python and node.js",
   siteUrl: "slusnys.com",
   plugins: [
     {
@@ -44,6 +44,14 @@ module.exports = {
     //   }
     // }
   ],
+  templates: {
+    Project: [
+      {
+        path: "/projects/:title",
+        component: "./src/templates/Project.vue"
+      }
+    ]
+  },
   transformers: {
     remark: {
       externalLinksTarget: "_blank",

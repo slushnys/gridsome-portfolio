@@ -2,7 +2,7 @@
 title: SendCloud - Number one shipping tool across Europe
 date: 2020-01-27T18:55:10.079Z
 description: The company is among the leading companies in growth thats expanding rapidly and has many awards. While it was fun to work with all the talented people, there were also quite some technical challenges as well.
-featuredImage: "img/sendcloud-job.png"
+featuredImage: "/img/sendcloud-job.png"
 tags:
   [
     "Python",
@@ -18,6 +18,12 @@ tags:
     E-commerce,
   ]
 ---
+
+## Introduction
+
+SendCloud being the best shipping tool is helping their customers to excel their shipping capabilities throughout Europe and abroad to the international markets saving them money, time and effort.
+
+As a full-stack software developer I worked in a team of great developers with whom we helped SendCloud to reach the peak of technology and innovation within the field of Logistics, Supply Chain and e-commerce.
 
 ## Technology stack
 
@@ -35,11 +41,7 @@ We used Flask to simulate shop API servers in order to achieve fluent process fo
 
 SendCloud frontend has been written in angular.js the moment when I started working with them, however after some time there was a decision made to shift the frontend stack to vue.js as it started to catch some more and more attention. We then started rewriting single components into Vue piece by piece.
 
-## What have we been working on at sendcloud
-
-SendCloud being the best shipping tool is helping their customers to excel their shipping capabilities throughout Europe and abroad to the international markets saving them money, time and effort.
-
-As a full-stack software developer I worked in a team of great developers with whom we helped SendCloud to reach the peak of technology and innovation within the field of Logistics, Supply Chain and e-commerce.
+## Daily tasks
 
 During our daily tasks we were developing an application that could seamlessly connect to more than 20 online store platforms, take care of shipping process from start until the end and automate internal processes.
 
