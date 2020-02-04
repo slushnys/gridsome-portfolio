@@ -3,7 +3,10 @@
 
 import DefaultLayout from "~/layouts/Default.vue";
 import "~/assets/styles.css";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import {
+  FontAwesomeIcon,
+  FontAwesomeLayers
+} from "@fortawesome/vue-fontawesome";
 import { config, library } from "@fortawesome/fontawesome-svg-core";
 import {
   faGithub,
@@ -11,10 +14,11 @@ import {
   faDev,
   faInstagram
 } from "@fortawesome/free-brands-svg-icons";
+import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 
 config.autoAddCss = false;
-library.add(faGithub, faTwitter, faDev, faInstagram);
+library.add(faGithub, faTwitter, faDev, faInstagram, faCheckCircle);
 
 // export default function(Vue, { router, head, isClient }) {
 export default function(Vue, { head }) {
