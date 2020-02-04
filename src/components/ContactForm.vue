@@ -1,5 +1,5 @@
 <template>
-    <form class="w-full max-w-lg">
+    <form class="w-full max-w-lg" name="contact" method="POST" data-netlify="true">
       <div class="flex flex-wrap -mx-3 mb-6">
         <div class="w-full md:w-full px-3 md:mb-0 max-w">
           <label
