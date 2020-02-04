@@ -10,7 +10,7 @@ module.exports = {
     svgRule.uses.clear();
     svgRule.use("vue-svg-loader").loader("vue-svg-loader");
   },
-  icon: "./static/favic on.png",
+  icon: "./static/favicon.png",
   siteName: "slusnys.com - freelance software developer",
   siteDescription:
     "Experienced web developer focused on building business applications using vue.js, python and node.js",

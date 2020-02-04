@@ -37,7 +37,9 @@
           Introduction
         </div> -->
         <p class="mt-2 text-xl text-gray-600">
-          I'm a software developer with a history of developing complex applications within banking, logistics supply chain, and computer vision industries.
+          I'm a software developer with a history of developing complex
+          applications within banking, logistics supply chain, and computer
+          vision industries.
         </p>
         <div class="text-center m-6 p-6">
           <a
@@ -52,22 +54,15 @@
     </div>
     <div class="md:flex">
       <div class="mb-4 mt-5">
-        <div
-          class="uppercase h2 tracking-wide text-xl font-bold"
-        >
+        <div class="uppercase h2 tracking-wide text-xl font-bold">
           Projects I've been working on
         </div>
         <div class="flex-wrap">
-        <template v-for="project in $page.projects.edges">
-          <g-link :to="project.node.path" :key="project.id">
-            <ProjectComponent
-              v-bind="project.node"
-              
-            ></ProjectComponent>
-
-          </g-link>
-        </template>
-
+          <template v-for="project in $page.projects.edges">
+            <g-link :to="project.node.path" :key="project.id">
+              <ProjectComponent v-bind="project.node"></ProjectComponent>
+            </g-link>
+          </template>
         </div>
       </div>
     </div>
@@ -101,51 +96,10 @@ export default {
       { value: "dev", url: "https://dev.to/slushnys" },
       { value: "instagram", url: "https://instagram.com/slushnysltd" }
     ],
-    metaInfo() {
-    return {
-      title: "Zigmas Slušnys",
-      description: "Experienced web developer focused on building business applications using vue.js, python and node.js"
-    };
-  },
-    knowledgeBullets: [
-      "Python",
-      "Django",
-      "Flask",
-      "FastAPI",
-      "JavaScript",
-      "Vue.js",
-      "Vuetify",
-      "Google Cloud Platform ",
-      "Google Firebase",
-      "Computer vision",
-      "TypeScript",
-      "Node.js",
-      "Micro-service architecture",
-      "Serverless",
-      "Kubernetes",
-      "DevOps",
-      "Continuous Integration",
-      "Continuous Delivery",
-      "Data analysis",
-      "Process Mining",
-      "Business Intelligence"
-    ],
-    sendcloudTags: [
-      "Python",
-      "Django",
-      "Flask",
-      "JavaScript",
-      "angular.js",
-      "Vue.js",
-      "Redis",
-      "PostgreSQL",
-      "RabbitMQ",
-      "Kubernetes"
-    ]
-  })
-  // metaInfo: {
-  //   title: "Hello, world!"
-  // }
+  }),
+  metaInfo: {
+    title: "Zigmas Slušnys"
+  }
 };
 </script>
 
