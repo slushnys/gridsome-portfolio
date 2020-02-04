@@ -18,7 +18,7 @@
           Your name
         </label>
         <input
-        name="full_name"
+        name="name"
           class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
           id="full-name"
           type="text"
