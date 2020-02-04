@@ -1,5 +1,5 @@
 ---
-title: Equinnolab - Innovation centre for equestrian sports
+title: Equinnolab - Innovation center for equestrian sports
 date: 2020-01-28T18:55:10.079Z
 description: The company is among the leading companies in growth thats expanding rapidly and has many awards. While it was fun to work with all the talented people, there were also quite some technical challenges as well.
 featuredImage: /img/equinnolab-job.png
