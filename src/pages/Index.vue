@@ -42,13 +42,12 @@
           vision industries.
         </p>
         <div class="text-center m-6 p-6">
-          <a
-            href="mailto:zigmas@slusnys.com"
-            target="_top"
+          <g-link
+            to="/contact/"
             class="secondary-color text-white font-bold py-3 px-4 rounded"
           >
             Contact me
-          </a>
+          </g-link>
         </div>
       </div>
     </div>
@@ -90,15 +89,21 @@ import ProjectComponent from "@/components/ProjectComponent";
 export default {
   components: { ProjectComponent },
   data: () => ({
+    contactFormOpen: false,
     iconLinks: [
       { value: "github", url: "https://github.com/slushnys" },
       { value: "twitter", url: "https://twitter.com/slushnys" },
       { value: "dev", url: "https://dev.to/slushnys" },
       { value: "instagram", url: "https://instagram.com/slushnysltd" }
-    ],
+    ]
   }),
   metaInfo: {
     title: "Zigmas Slušnys"
+  },
+  methods: {
+    toggleContactForm() {
+      this.contactFormOpen = !this.contactFormOpen;
+    }
   }
 };
 </script>
