@@ -37,7 +37,7 @@
           Introduction
         </div> -->
         <p class="mt-2 text-xl text-gray-600">
-          I'm a software developer with a a history of developing complex applications for businesses within banking, logistics and supply chain and computer vision industries.
+          I'm a software developer with a history of developing complex applications within banking, logistics supply chain, and computer vision industries.
         </p>
         <div class="text-center m-6 p-6">
           <a
@@ -101,6 +101,12 @@ export default {
       { value: "dev", url: "https://dev.to/slushnys" },
       { value: "instagram", url: "https://instagram.com/slushnysltd" }
     ],
+    metaInfo() {
+    return {
+      title: "Zigmas Slušnys",
+      description: "Experienced web developer focused on building business applications using vue.js, python and node.js"
+    };
+  },
     knowledgeBullets: [
       "Python",
       "Django",

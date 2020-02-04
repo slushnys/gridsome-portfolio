@@ -14,7 +14,7 @@ module.exports = {
   siteName: "slusnys.com - freelance software developer",
   siteDescription:
     "Experienced web developer focused on building business applications using vue.js, python and node.js",
-  siteUrl: "slusnys.com",
+  siteUrl: "https://slusnys.com",
   plugins: [
     {
       use: "gridsome-plugin-tailwindcss",

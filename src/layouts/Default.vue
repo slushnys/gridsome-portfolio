@@ -36,7 +36,7 @@ query {
 export default {
   data: () => ({
     
-  })
+  }),
 };
 </script>
 
