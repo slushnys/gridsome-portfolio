@@ -5,6 +5,8 @@
     name="contact"
     method="POST"
     data-netlify="true"
+    netlify="true"
+    action="/success"
     data-netlify-honeypot="bot-field"
   >
     <div class="flex flex-wrap -mx-3 mb-6">
@@ -16,6 +18,7 @@
           Your name
         </label>
         <input
+        name="full_name"
           class="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
           id="full-name"
           type="text"
@@ -36,6 +39,7 @@
         <input
           class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
           id="email"
+          name="email"
           type="email"
           required
           v-model="formData.email"
@@ -52,6 +56,7 @@
           Message
         </label>
         <textarea
+        name="message"
           v-model="formData.message"
           class=" no-resize appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none"
           id="message"

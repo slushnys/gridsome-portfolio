@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <div class="md:flex">
+    <div class="md:flex mb-6">
       <div class="mb-4 mt-5">
         <div class="uppercase h2 tracking-wide text-xl font-bold">
           Projects I've been working on
