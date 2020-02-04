@@ -48,10 +48,9 @@
           ></textarea>
         </div>
       </div>
-      <div class="md:flex md:items-center text-center">
-          <button
+      <div class="text-center">
+          <button type="submit"
             class="shadow secondary-color focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-            type="button"
           >
             Send
           </button>
