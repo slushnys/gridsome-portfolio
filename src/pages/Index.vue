@@ -94,7 +94,7 @@ export default {
       { value: "github", url: "https://github.com/slushnys" },
       { value: "twitter", url: "https://twitter.com/slushnys" },
       { value: "dev", url: "https://dev.to/slushnys" },
-      { value: "instagram", url: "https://instagram.com/slushnysltd" }
+      { value: "instagram", url: "https://instagram.com/slushnys" }
     ]
   }),
   metaInfo: {
