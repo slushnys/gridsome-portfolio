@@ -65,3 +65,31 @@ receives a value from the channel
 
 `fmt.Println(msg)`
 print that channel
+
+### goroutines
+
+If the main goroutines have two concurent goroutines then the program will exit because it hit the end of main() function
+we can use waitgroups.
+
+### rate limiting
+
+```go
+    limiter := time.Tick(200 * time.Millisecond)
+    // By blocking on a receive from the limiter channel before serving each request, we limit ourselves to 1 request every 200 milliseconds.
+
+    for req := range requests {
+        // this will pause the requests for every certain amount of time.
+        <-limiter
+        fmt.Println("request", req, time.Now())
+    }
+
+```
+
+### atomic counters
+
+atomic counters doesn't let race conditions to fail/distort the calculation/execution of values.
+mutexes also can help in preserving the state so in a way this holds the global state of the application, just like Vuex does in vue.
+
+Simple state can be managed by atomic counters, more complex state as mentioned in gobyexample.com is being handled by Mutex in order to safely access data across multiple goroutines.
+
+So to my understanding, data shouldn't be shared normally, but can be read through mutexes.

@@ -17,6 +17,23 @@ module.exports = {
   siteUrl: "https://slusnys.com",
   plugins: [
     {
+      use: "@gridsome/plugin-sitemap",
+      options: {
+        cacheTime: 600000, // default
+        exclude: ["/success"],
+        config: {
+          "/blog/*": {
+            changefreq: "weekly",
+            priority: 0.5
+          },
+          "/projects": {
+            changefreq: "monthly",
+            priority: 0.7
+          }
+        }
+      }
+    },
+    {
       use: "gridsome-plugin-tailwindcss",
       options: {
         shouldPurge: false
